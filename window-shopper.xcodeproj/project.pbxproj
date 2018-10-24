@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FB2406C52180E79500F665DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406C42180E79500F665DD /* AppDelegate.swift */; };
-		FB2406C72180E79500F665DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406C62180E79500F665DD /* ViewController.swift */; };
+		FB2406C72180E79500F665DD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406C62180E79500F665DD /* MainVC.swift */; };
 		FB2406CA2180E79500F665DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2406C82180E79500F665DD /* Main.storyboard */; };
 		FB2406CC2180E79700F665DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2406CB2180E79700F665DD /* Assets.xcassets */; };
 		FB2406CF2180E79700F665DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2406CD2180E79700F665DD /* LaunchScreen.storyboard */; };
 		FB2406DA2180E79700F665DD /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406D92180E79700F665DD /* window_shopperTests.swift */; };
+		FB2406E72180EA8200F665DD /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		FB2406C12180E79500F665DD /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2406C42180E79500F665DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB2406C62180E79500F665DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB2406C62180E79500F665DD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FB2406C92180E79500F665DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB2406CB2180E79700F665DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2406CE2180E79700F665DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		FB2406D52180E79700F665DD /* window-shopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2406D92180E79700F665DD /* window_shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperTests.swift; sourceTree = "<group>"; };
 		FB2406DB2180E79700F665DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 		FB2406C32180E79500F665DD /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				FB2406E52180EA5500F665DD /* Views */,
+				FB2406E42180E91700F665DD /* Controller */,
 				FB2406C42180E79500F665DD /* AppDelegate.swift */,
-				FB2406C62180E79500F665DD /* ViewController.swift */,
 				FB2406C82180E79500F665DD /* Main.storyboard */,
 				FB2406CB2180E79700F665DD /* Assets.xcassets */,
 				FB2406CD2180E79700F665DD /* LaunchScreen.storyboard */,
@@ -94,6 +97,22 @@
 				FB2406DB2180E79700F665DD /* Info.plist */,
 			);
 			path = "window-shopperTests";
+			sourceTree = "<group>";
+		};
+		FB2406E42180E91700F665DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB2406C62180E79500F665DD /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB2406E52180EA5500F665DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2406C72180E79500F665DD /* ViewController.swift in Sources */,
+				FB2406E72180EA8200F665DD /* CurrencyTxtField.swift in Sources */,
+				FB2406C72180E79500F665DD /* MainVC.swift in Sources */,
 				FB2406C52180E79500F665DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
