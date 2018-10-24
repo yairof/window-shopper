@@ -14,6 +14,8 @@
 		FB2406CF2180E79700F665DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2406CD2180E79700F665DD /* LaunchScreen.storyboard */; };
 		FB2406DA2180E79700F665DD /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406D92180E79700F665DD /* window_shopperTests.swift */; };
 		FB2406E72180EA8200F665DD /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */; };
+		FB2406EA21810FF200F665DD /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406E921810FF200F665DD /* Wage.swift */; };
+		FB2406EB2181118000F665DD /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2406E921810FF200F665DD /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		FB2406D92180E79700F665DD /* window_shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperTests.swift; sourceTree = "<group>"; };
 		FB2406DB2180E79700F665DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
+		FB2406E921810FF200F665DD /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		FB2406C32180E79500F665DD /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				FB2406E821810FDD00F665DD /* Model */,
 				FB2406E52180EA5500F665DD /* Views */,
 				FB2406E42180E91700F665DD /* Controller */,
 				FB2406C42180E79500F665DD /* AppDelegate.swift */,
@@ -113,6 +117,14 @@
 				FB2406E62180EA8200F665DD /* CurrencyTxtField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FB2406E821810FDD00F665DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2406E921810FF200F665DD /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2406E72180EA8200F665DD /* CurrencyTxtField.swift in Sources */,
+				FB2406EA21810FF200F665DD /* Wage.swift in Sources */,
 				FB2406C72180E79500F665DD /* MainVC.swift in Sources */,
 				FB2406C52180E79500F665DD /* AppDelegate.swift in Sources */,
 			);
@@ -227,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2406DA2180E79700F665DD /* window_shopperTests.swift in Sources */,
+				FB2406EB2181118000F665DD /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
