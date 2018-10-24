@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="joP-03-hVn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="joP-03-hVn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-9q-piF">
@@ -47,26 +46,57 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-yg-CFy">
+                                <rect key="frame" x="151" y="305" width="74" height="82"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="0.93992821354902034" green="1" blue="0.92713186383393442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LX-PV-a1y">
+                                <rect key="frame" x="153.5" y="387" width="68.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.93992821354902034" green="1" blue="0.92713186383393442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-wE-Hkx">
+                                <rect key="frame" x="20" y="620" width="335" height="47"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="0.93992821354902034" green="1" blue="0.92713186383393442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalcBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ctk-sC-yyF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="S8Q-Z6-r4w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1uZ-4l-qcg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4a-wE-Hkx" secondAttribute="trailing" constant="20" id="2FO-Wb-Lcx"/>
                             <constraint firstItem="zpj-l7-I8i" firstAttribute="leading" secondItem="S8Q-Z6-r4w" secondAttribute="leading" id="3Ec-UI-pqe"/>
                             <constraint firstItem="f3y-9q-piF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="3YH-le-Mp3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S8Q-Z6-r4w" secondAttribute="trailing" constant="20" id="81Y-FI-lJz"/>
+                            <constraint firstItem="SHi-yg-CFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aft-8V-mJL"/>
                             <constraint firstItem="zpj-l7-I8i" firstAttribute="trailing" secondItem="S8Q-Z6-r4w" secondAttribute="trailing" id="Bgc-0q-rM2"/>
                             <constraint firstItem="joP-03-hVn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HUw-1W-8nA"/>
+                            <constraint firstItem="8LX-PV-a1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hta-FC-plS"/>
                             <constraint firstItem="f3y-9q-piF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oa3-2X-WQU"/>
+                            <constraint firstItem="8LX-PV-a1y" firstAttribute="top" secondItem="SHi-yg-CFy" secondAttribute="bottom" id="S5l-Kw-exy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q4a-wE-Hkx" secondAttribute="bottom" id="Sz0-Mf-KvF"/>
                             <constraint firstItem="zpj-l7-I8i" firstAttribute="top" secondItem="S8Q-Z6-r4w" secondAttribute="bottom" constant="25" id="VR6-7q-TBt"/>
+                            <constraint firstItem="joP-03-hVn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZVy-4t-n9x"/>
                             <constraint firstItem="zpj-l7-I8i" firstAttribute="height" secondItem="S8Q-Z6-r4w" secondAttribute="height" id="cba-8p-CD3"/>
-                            <constraint firstItem="joP-03-hVn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="czn-0C-TNx"/>
+                            <constraint firstItem="q4a-wE-Hkx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ckE-2p-q5i"/>
                             <constraint firstItem="joP-03-hVn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hfz-xQ-0Xa"/>
                             <constraint firstItem="S8Q-Z6-r4w" firstAttribute="top" secondItem="f3y-9q-piF" secondAttribute="bottom" constant="35" id="hwF-vy-QxV"/>
+                            <constraint firstItem="SHi-yg-CFy" firstAttribute="top" secondItem="zpj-l7-I8i" secondAttribute="bottom" constant="50" id="lUI-Tp-cYg"/>
                             <constraint firstItem="joP-03-hVn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lzc-4q-hqt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="8LX-PV-a1y" id="mag-0J-Oet"/>
+                        <outlet property="numberLbl" destination="SHi-yg-CFy" id="ikS-7Q-cXC"/>
                         <outlet property="priceTxt" destination="zpj-l7-I8i" id="Y72-6f-DOH"/>
                         <outlet property="wageTxt" destination="S8Q-Z6-r4w" id="zyz-Yh-nsz"/>
                     </connections>
